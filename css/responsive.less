@@ -1,0 +1,544 @@
+/*
+ *
+ *Estilos personalizados del sitio.
+ *
+ *
+ *
+ *
+ *Variables less.
+ *
+ */
+
+/* -----Imagenes----- */
+
+@images: '../images';
+
+/* -----Colores----- */
+@blanco: rgba(255, 255, 255, 1);
+
+@negro: rgba(0, 0, 0, 1);
+
+@celeste: rgba(129, 215, 252, 1);
+
+@celesteclaro:lighten(@celeste, 20%);
+
+@celesteoscuro:darken(@celeste, 15%);
+
+@naranja: rgba(255, 96, 0, 1);
+
+@naranjaclaro: lighten(@naranja, 20%);
+
+@naranjaoscuro:darken(@naranja, 15%);
+
+@gris:  rgba(150, 150, 150, 1);
+
+@grisclaro: lighten(@gris, 40%);
+
+@grisoscuro: darken(@gris, 20%);
+
+@red: rgba(160, 44, 44, 1);
+
+/* -----Tipografía----- */
+
+@titulo-dibujado: 'Fredericka the Great', cursive; 
+
+@titulo-grueso: 'Slackey', cursive;
+
+@titulo-fino: 'Rock Salt', cursive;
+
+@titulo-copado: 'Fontdiner Swanky', cursive;
+
+@letra-general: 'Josefin Slab Normal', serif;
+
+@letra-general-italica: 'Josefin Slab Italic', serif;
+
+@letra-general-bold: 'Josefin Slab Bold', serif;
+
+@letra-general-bold-italica: 'Josefin Slab Bold Italic', serif;
+
+@letra-especial: 'Bangers', cursive;
+
+@letra-llamativa: 'Aclonica', sans-serif;
+
+/*
+ *
+ *Clases less.
+ *
+ */
+
+.hidden{
+	display: none !important;
+	visibility: hidden !important;
+}
+
+.color-fondo(@color){
+	background-color: @color;
+	background: @color;
+}
+
+.sombra-texto(@eje-x, @eje-y, @blur, @color){
+	text-shadow:@eje-x @eje-y @blur @color;
+}
+
+.sombra-caja_ext(@eje-x, @eje-y, @blur, @color){
+    -moz-box-shadow: @eje-x @eje-y @blur @color;
+    -webkit-box-shadow: @eje-x @eje-y @blur @color;
+    box-shadow: @eje-x @eje-y @blur @color;
+}
+
+.sombra-caja_int(@inset, @eje-x, @eje-y, @blur, @color){
+    -moz-box-shadow: @inset @eje-x @eje-y @blur @color;
+    -webkit-box-shadow: @inset @eje-x @eje-y @blur @color;
+    box-shadow: @inset @eje-x @eje-y @blur @color;
+}
+
+.margen(@top, @right, @bottom, @left){
+	margin-top: @top;
+	margin-right: @right;
+	margin-bottom: @bottom;
+	margin-left: @left;
+}
+
+.margen-eje_y(@top, @bottom){
+	margin-top: @top;
+	margin-bottom: @bottom;
+}
+
+.margen-eje_x(@right, @left){
+	margin-right: @right;
+	margin-left: @left;
+}
+
+.relleno(@top, @right, @bottom, @left){
+	padding-top: @top;
+	padding-right: @right;
+	padding-bottom: @bottom;
+	padding-left: @left;
+}
+
+.relleno-eje_y(@top, @bottom){
+	padding-top: @top;
+	padding-bottom: @bottom;
+
+}
+
+.relleno-eje_x(@right, @left){
+	padding-right: @right;
+	padding-left: @left;
+}
+
+.texto-columnas(@width, @count, @fill, @gap, @width-rule, @style-rule, @color-rule, @span){
+	columns:@width @count;
+	-webkit-columns:@width @count; /* Safari and Chrome */
+	-moz-columns:@width @count; /* Firefox */
+	-o-columns:@width @count; /* Opera */
+	column-fill:@fill;
+	column-gap:@gap;
+	-moz-column-gap:@gap; /* Firefox */
+	-webkit-column-gap:@gap; /* Safari and Chrome */
+	-o-column-gap:@gap; /* Opera */
+	column-rule:@width-rule @style-rule @color-rule;
+	-moz-column-rule:@width-rule @style-rule @color-rule; /* Firefox */
+	-webkit-column-rule:@width-rule @style-rule @color-rule; /* Safari and Chrome */
+	-o-column-rule:@width-rule @style-rule @color-rule; /* Opera */
+	column-span:@span;
+	-webkit-column-span:@span; /* Safari and Chrome */
+	-moz-column-span:@span;
+	-o-column-span:@span;
+}
+
+.bordes-redondeados(@style, @width, @color, @T-left, @T-right, @B-left, @B-right){
+    border:@style @width @color;
+    -moz-border-radius-topleft: @T-left;
+    -moz-border-radius-topright:@T-right;
+    -moz-border-radius-bottomleft:@B-left;
+    -moz-border-radius-bottomright:@B-right;
+    -webkit-border-top-left-radius:@T-left;
+    -webkit-border-top-right-radius:@T-right;
+    -webkit-border-bottom-left-radius:@B-left;
+    -webkit-border-bottom-right-radius:@B-right;
+    border-top-left-radius:@T-left;
+    border-top-right-radius:@T-right;
+    border-bottom-left-radius:@B-left;
+    border-bottom-right-radius:@B-right;
+}
+
+/* Empiezan las media queries */
+
+@media (min-width: 1441px) {
+	#menu-small-device{
+		display: none;
+		visibility: hidden;
+	}
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+	#container-total{
+		.row{
+			#main-content{
+				section{
+					article.post{
+						/*img.content-ega{
+							width:400px !important;
+							height:370px !important;
+						}*/
+					}
+				}
+			}
+		}
+	}
+
+	#menu-small-device{
+		display: none;
+		visibility: hidden;
+	}
+	#clientes{
+		height: 250px;
+		margin-bottom: 30px;
+
+		#container-clientes{
+			background-color:@grisclaro;
+			text-align: center;
+
+			#images-clientes{
+				.relleno-eje_y(20px, 20px);
+				.relleno-eje_x(10px, 50px);
+				text-align: center;
+
+				h2{
+					.margen-eje_y(15px, 25px);
+				}
+				ul{
+					width: auto;
+					height: 200px;
+
+					li{
+						float: left;
+						.margen-eje_x(15px, 15px);
+
+						a{
+							opacity: 0.5;
+							text-decoration: none;
+
+							img{
+								width: 150px;
+							}
+							p{
+								.margen-eje_y(8px, 0);
+							}
+						}
+						a:hover{
+							opacity: 1;
+							transition:all 1s ease 0s;
+							text-decoration: none;
+
+							img{
+								width: 200px;
+								transition:all 1s ease 0s;
+							}
+							p{
+								.margen-eje_y(8px, 0);
+							}
+						}
+					}
+				}
+			}
+		}	
+	}
+}
+
+@media (min-width: 480px) and (max-width: 1024px) {
+	#container-total{
+		.row{
+			#main-content{
+				section{
+					article.post{
+						/*img.content-ega{
+							width:350px !important;
+							height: 320px !important;
+						}*/
+					}
+				}
+			}
+		}
+	}
+	#nav-theme{
+		.relleno-eje_x(5px, 5px);
+		margin-left: -15px;
+		height: 60px;
+		width: 100%;
+		position: absolute;
+		z-index: 11;
+	    .color-fondo(@celeste);
+
+		div.row{
+		.color-fondo(@celeste);
+		width: 100%;
+
+			div#site-logo{
+				.margen-eje_y(10px, 0);
+			}
+			
+			#menu-small-device{
+				padding-left: 40px;
+
+				#container-menu-small-device-id{
+					width: auto !important;
+				}
+			}
+		}
+	}
+	#site-menu,
+	#slider-header,
+	#clientes{
+		display: none;
+		visibility: hidden;
+	}
+	#contenedor-header{
+		#title-header{
+			#logo-title::before{
+			  content: url("@{images}/ega-youtube-redondo-muychico.png");
+			}
+		}
+	}
+	footer{
+	  margin-top: 0 !important;
+	  padding-top: 0 !important;
+	}
+	#accion{
+		div{
+			#accion-llamado{
+				p{
+				  columns: 2 auto;
+				  column-gap: 1em !important;
+				  column-rule: 1px solid #F3F3F3;
+				  -webkit-columns: 2 auto;
+				  -webkit-column-gap: 1em !important;
+				  -webkit-column-rule: 1px solid #F3F3F3;
+				  -moz-columns: 2 auto;
+				  -moz-column-gap: 1em !important;
+				  -moz-column-rule: 1px solid #F3F3F3;
+				  -o-columns: 2 auto;
+				  -o-column-gap: 1em !important;
+				  -o-column-rule: 1px solid #F3F3F3;
+				}
+			}
+		}
+	}
+	#accion{
+		div{
+			#accion-llamado{
+			  padding: 0px 7px;
+			}
+		}
+	}
+	#comments,
+	#comments h3,
+	#comments #comments-list,
+	#comments #respond,
+	#comments #respond form p,
+	#comments #respond form p input#author,
+	#comments #respond form p input#email,
+	#comments #respond form p input#url{
+	  min-width: 430px !important;
+	  max-width: 1000px !important;
+	}
+	#mc_embed_signup{
+		width:300px !important;
+	}
+}
+
+@media (min-width: 251px) and (max-width: 479px) {
+	#container-total{
+		.row{
+			#main-content{
+				section{
+					article.post{
+						/*img.content-ega{
+							width:220px !important;
+							height: 190px !important;
+						}*/
+					}
+				}
+			}
+		}
+	}
+	#nav-theme{
+		.relleno-eje_x(5px, 5px);
+		margin-left: -15px;
+		height: 60px;
+		width: 100%;
+		position: absolute;
+		z-index: 11;
+	    .color-fondo(@celeste);
+
+		div.row{
+		.color-fondo(@celeste);
+		width: 100%;
+
+			div#site-logo{
+				.margen-eje_y(10px, 0);
+			}
+			
+			#menu-small-device{
+				padding-left: 40px;
+
+				#container-menu-small-device-id{
+					width: auto !important;
+				}
+			}
+		}
+	}
+	#site-menu,
+	#slider-header,
+	#clientes{
+		display: none;
+		visibility: hidden;
+	}
+	#contenedor-header{
+		#title-header{
+			#logo-title::before{
+			  content: url("@{images}/ega-youtube-redondo-muychico.png");
+			}
+		}
+	}
+	footer{
+	  margin-top: 0 !important;
+	  padding-top: 0 !important;
+	}
+	#accion{
+		div{
+			#accion-llamado{
+				p{
+				  columns: 1 auto !important;
+				  -webkit-columns: 1 auto !important;
+				  -moz-columns: 1 auto !important;
+				  -o-columns: 1 auto !important;
+				}
+			}
+		}
+	}
+	#accion{
+		div{
+			#accion-llamado{
+			  padding: 0px 7px;
+			}
+		}
+	}
+	#comments,
+	#comments h3,
+	#comments #comments-list,
+	#comments #respond,
+	#comments #respond form p,
+	#comments #respond form p input#author,
+	#comments #respond form p input#email,
+	#comments #respond form p input#url{
+	  min-width: 250px !important;
+	  max-width: 280px !important;
+	}
+	#mc_embed_signup{
+		width:250px !important;
+	}
+}
+
+@media (max-width: 250px) {
+	#container-total{
+		.row{
+			#main-content{
+				section{
+					article.post{
+						/*img.content-ega{
+							width:150px !important;
+							height: 120px !important;
+						}*/
+					}
+				}
+			}
+		}
+	}
+	#nav-theme{
+		.relleno-eje_x(5px, 5px);
+		margin-left: -15px;
+		height: 60px;
+		width: 100%;
+		position: absolute;
+		z-index: 11;
+	    .color-fondo(@celeste);
+
+		div.row{
+		.color-fondo(@celeste);
+		width: 100%;
+
+			div#site-logo{
+				.margen-eje_y(10px, 0);
+			}
+			
+			#menu-small-device{
+				padding-left: 40px;
+
+				#container-menu-small-device-id{
+					width: auto !important;
+				}
+			}
+		}
+	}
+	#site-menu,
+	#slider-header,
+	#clientes{
+		display: none;
+		visibility: hidden;
+	}
+	#contenedor-header{
+		#title-header{
+			#logo-title::before{
+			  content: url("@{images}/ega-youtube-redondo-muychico.png");
+			}
+		}
+	}
+	footer{
+	  margin-top: 0 !important;
+	  padding-top: 0 !important;
+	}
+	#accion{
+		div{
+			#accion-llamado{
+				p{
+				  columns: 1 auto !important;
+				  -webkit-columns: 1 auto !important;
+				  -moz-columns: 1 auto !important;
+				  -o-columns: 1 auto !important;
+				}
+			}
+		}
+	}
+	#accion{
+		div{
+			#accion-llamado{
+			  padding: 0px 7px;
+			}
+		}
+	}
+	#contenedor-header{
+		#title-header{
+			#container-main-title{
+				#main-title{
+				  font-size: 30px !important;
+				}
+			}
+		}
+	}
+	#comments,
+	#comments h3,
+	#comments #comments-list,
+	#comments #respond,
+	#comments #respond form p,
+	#comments #respond form p input#author,
+	#comments #respond form p input#email,
+	#comments #respond form p input#url{
+	  min-width: 150px !important;
+	  max-width: 200px !important;
+	}
+	#mc_embed_signup{
+		width:210px !important;
+	}
+}

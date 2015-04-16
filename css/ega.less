@@ -1,0 +1,861 @@
+/********** IMPORTANDO HOJAS DE ESTILO **********/
+
+@import url('../less/bootstrap.less');
+@import url('bootstrap-theme.css');
+@import url('fonts.css');
+@import url('resource-slider.css');
+@import url('resource-menu.css');
+@import url('resource-menu-small-device.css');
+
+/*
+ *
+ *Estilos personalizados del sitio.
+ *
+ *
+ *
+ *
+ *Variables less.
+ *
+ */
+
+/* -----Imagenes----- */
+
+@images: '../images';
+
+/* -----Colores----- */
+@blanco: rgba(255, 255, 255, 1);
+
+@negro: rgba(0, 0, 0, 1);
+
+@celeste: rgba(129, 215, 252, 1);
+
+@celesteclaro:lighten(@celeste, 20%);
+
+@celesteoscuro:darken(@celeste, 15%);
+
+@naranja: rgba(255, 96, 0, 1);
+
+@naranjaclaro: lighten(@naranja, 20%);
+
+@naranjaoscuro:darken(@naranja, 15%);
+
+@gris:  rgba(150, 150, 150, 1);
+
+@grisclaro: lighten(@gris, 40%);
+
+@grisoscuro: darken(@gris, 20%);
+
+@red: rgba(160, 44, 44, 1);
+
+/* -----Tipografía----- */
+
+@titulo-dibujado: 'Fredericka the Great', cursive; 
+
+@titulo-grueso: 'Slackey', cursive;
+
+@titulo-fino: 'Rock Salt', cursive;
+
+@titulo-copado: 'Fontdiner Swanky', cursive;
+
+@letra-general: 'Josefin Slab Normal', serif;
+
+@letra-general-italica: 'Josefin Slab Italic', serif;
+
+@letra-general-bold: 'Josefin Slab Bold', serif;
+
+@letra-general-bold-italica: 'Josefin Slab Bold Italic', serif;
+
+@letra-especial: 'Bangers', cursive;
+
+@letra-llamativa: 'Aclonica', sans-serif;
+
+@letra-titulo-sobria: 'IM Fell Double Pica Normal', serif;
+
+/*
+ *
+ *Clases less.
+ *
+ */
+
+.hidden{
+	display: none !important;
+	visibility: hidden !important;
+}
+
+.color-fondo(@color){
+	background-color: @color;
+	background: @color;
+}
+
+.sombra-texto(@eje-x, @eje-y, @blur, @color){
+	text-shadow:@eje-x @eje-y @blur @color;
+}
+
+.sombra-caja_ext(@eje-x, @eje-y, @blur, @color){
+    -moz-box-shadow: @eje-x @eje-y @blur @color;
+    -webkit-box-shadow: @eje-x @eje-y @blur @color;
+    box-shadow: @eje-x @eje-y @blur @color;
+}
+
+.sombra-caja_int(@inset, @eje-x, @eje-y, @blur, @color){
+    -moz-box-shadow: @inset @eje-x @eje-y @blur @color;
+    -webkit-box-shadow: @inset @eje-x @eje-y @blur @color;
+    box-shadow: @inset @eje-x @eje-y @blur @color;
+}
+
+.margen(@top, @right, @bottom, @left){
+	margin-top: @top;
+	margin-right: @right;
+	margin-bottom: @bottom;
+	margin-left: @left;
+}
+
+.margen-eje_y(@top, @bottom){
+	margin-top: @top;
+	margin-bottom: @bottom;
+}
+
+.margen-eje_x(@right, @left){
+	margin-right: @right;
+	margin-left: @left;
+}
+
+.relleno(@top, @right, @bottom, @left){
+	padding-top: @top;
+	padding-right: @right;
+	padding-bottom: @bottom;
+	padding-left: @left;
+}
+
+.relleno-eje_y(@top, @bottom){
+	padding-top: @top;
+	padding-bottom: @bottom;
+
+}
+
+.relleno-eje_x(@right, @left){
+	padding-right: @right;
+	padding-left: @left;
+}
+
+.texto-columnas(@width, @count, @fill, @gap, @width-rule, @style-rule, @color-rule, @span){
+	columns:@width @count;
+	-webkit-columns:@width @count; /* Safari and Chrome */
+	-moz-columns:@width @count; /* Firefox */
+	-o-columns:@width @count; /* Opera */
+	column-fill:@fill;
+	column-gap:@gap;
+	-moz-column-gap:@gap; /* Firefox */
+	-webkit-column-gap:@gap; /* Safari and Chrome */
+	-o-column-gap:@gap; /* Opera */
+	column-rule:@width-rule @style-rule @color-rule;
+	-moz-column-rule:@width-rule @style-rule @color-rule; /* Firefox */
+	-webkit-column-rule:@width-rule @style-rule @color-rule; /* Safari and Chrome */
+	-o-column-rule:@width-rule @style-rule @color-rule; /* Opera */
+	column-span:@span;
+	-webkit-column-span:@span; /* Safari and Chrome */
+	-moz-column-span:@span;
+	-o-column-span:@span;
+}
+
+.bordes-redondeados(@style, @width, @color, @T-left, @T-right, @B-left, @B-right){
+    border:@style @width @color;
+    -moz-border-radius-topleft: @T-left;
+    -moz-border-radius-topright:@T-right;
+    -moz-border-radius-bottomleft:@B-left;
+    -moz-border-radius-bottomright:@B-right;
+    -webkit-border-top-left-radius:@T-left;
+    -webkit-border-top-right-radius:@T-right;
+    -webkit-border-bottom-left-radius:@B-left;
+    -webkit-border-bottom-right-radius:@B-right;
+    border-top-left-radius:@T-left;
+    border-top-right-radius:@T-right;
+    border-bottom-left-radius:@B-left;
+    border-bottom-right-radius:@B-right;
+}
+
+/*
+ *
+ *Clases reutilizables en el sitio.
+ *
+ */
+
+
+/*
+ *
+ *Estilos generales.
+ *
+ */
+
+h1{
+	font-family: @titulo-dibujado;
+}
+
+h2{
+	font-family: @titulo-grueso;
+}
+
+h3, h4, h5, h6{
+	font-family: @letra-titulo-sobria;
+}
+
+p, ol, ul{
+	font-family: @letra-general;
+	font-size: 18px;
+}
+
+a{
+	font-family: @titulo-grueso;
+}
+
+/*
+ *
+ *Estilos del front-page.
+ *
+ */
+
+#container-total{
+
+	#head-header{
+		margin-top: 60px;
+	}
+
+}
+
+#nav-theme{
+	.relleno-eje_x(30px, 30px);
+	margin-left: -15px;
+	height: 60px;
+	width: 100%;
+	position: fixed;
+	z-index: 11;
+    .color-fondo(@celeste);
+
+	div.row{
+
+		div#site-logo{
+			.margen-eje_y(10px, 0);
+		}		
+	}
+}
+
+#contenedor-header{
+	.relleno-eje_y(20px, 20px);
+	background-image: url('@{images}/fondo_web.png');
+	background-size: cover;
+
+	#title-header{
+
+		#logo-title:before{
+			content: url("@{images}/ega-youtube-redondo-chico.png");
+		}
+
+		#container-main-title{
+			color: @blanco !important;
+
+			#main-title{
+				.sombra-texto(12px, 6px, 4px, #262626);
+				.margen-eje_y(15px, 15px);
+				font-size: 40px;
+
+				small{
+					color: @blanco;
+				}
+			}
+			#social-icon{
+				padding-left: 40px;
+
+				a{
+					text-decoration: none;
+				}
+				img{
+					width: 80px;
+				}
+			}
+		}
+	}
+}
+
+#servicios{
+
+	div{
+		height:auto;
+		.relleno-eje_y(25px, 25px);
+		.color-fondo(@grisclaro);
+
+		#diseno{
+			text-align: center;
+
+			h3{
+				font-family: @titulo-dibujado;
+				font-size: 28px;
+			}
+			p{
+				font-family: @letra-especial;
+				font-size: 14px;
+			}
+		}
+
+		#cursos{
+			text-align: center;
+
+			h3{
+				font-family: @titulo-dibujado;
+				font-size: 28px;
+			}
+			p{
+				font-family: @letra-especial;
+				font-size: 14px;
+			}
+
+		}
+
+		#soporte{
+			text-align: center;
+
+			h3{
+				font-family: @titulo-dibujado;
+				font-size: 28px;
+			}
+			p{
+				font-family: @letra-especial;
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+#accion{
+
+	div{
+		background-image: url('@{images}/galeon-home.png');
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		min-height: 200px;
+		.relleno-eje_y(50px, 50px);
+
+		#accion-llamado{
+			text-align: center;
+			.relleno(50px, 60px, 50px, 60px);
+
+			h3{
+				font-family: @titulo-copado;
+				vertical-align: middle;
+				margin-bottom: 30px;
+			}
+			p{
+				font-family: @letra-llamativa;
+				font-size: 14px;
+				vertical-align: middle;
+				text-align: justify;
+				.texto-columnas(auto, 2, balance, 3em, 1px, solid, #F3F3F3, all);
+			}
+		}
+	}
+}
+
+#clientes{
+	height: 300px;
+	margin-bottom: 180px;
+
+	#container-clientes{
+		background-color:@grisclaro;
+		text-align: center;
+
+		#images-clientes{
+			.relleno-eje_y(20px, 20px);
+			.relleno-eje_x(0px, 70px);
+			text-align: center;
+
+			h2{
+				.margen-eje_y(15px, 25px);
+			}
+			ul{
+				list-style: none;
+
+				li{
+					float: left;
+					.margen-eje_x(15px, 15px);
+
+					a{
+						opacity: 0.5;
+						text-decoration: none;
+
+						img{
+							width: 300px;
+						}
+						p{
+							.margen-eje_y(8px, 0);
+						}
+					}
+					a:hover{
+						opacity: 1;
+						transition:all 1s ease 0s;
+						text-decoration: none;
+
+						img{
+							width: 350px;
+							transition:all 1s ease 0s;
+						}
+						p{
+							.margen-eje_y(8px, 0);
+						}
+					}
+				}
+			}
+		}
+		h4{
+			font-family: @titulo-grueso;
+		}
+	}	
+}
+
+footer{
+	.margen-eje_y(100px, 0px);
+	.relleno-eje_y(30px, 0px);
+
+	#widgets-dinamicos{
+		background-color: @celeste;
+		min-height: 300px;
+
+		#pri, #seg, #ter, #cua{
+			min-height: 250px;
+			padding-bottom: 7px;
+
+			div{
+
+				h2{
+					font-size: 22px;
+					font-family: @titulo-grueso;
+				}
+				ul{
+
+					li{
+
+						a{
+							font-family: @letra-llamativa;
+							font-size: 16px;
+							color: @naranja;
+						}
+						a:hover{
+							color: @blanco;
+						}
+					}
+				}
+				div{
+
+					a{
+						font-family: @letra-llamativa;
+						font-size: 16px;
+						color: @naranja;
+					}
+					a:hover{
+						color: @blanco;
+					}
+				}
+			}
+
+		}
+		#copyright{
+			background-color: @grisoscuro;
+			color: @blanco;
+			min-height: 25px;
+			font-family: @letra-llamativa;
+			font-size: 15px;
+			text-align: center;
+			.relleno-eje_y(20px, 3px);
+		}
+	}
+}
+
+/*
+ *
+ *Estilos del home.
+ *
+ */
+
+#widget-left, #widget-right{
+	font-family: @letra-especial;
+	.relleno-eje_y(30px, 30px);
+
+	h2{
+		font-size: 20px;
+	}
+}
+
+#main-content{
+
+	section{
+
+		#error-404{
+			.margen-eje_y(10px, 5px);
+		}
+
+		article{
+
+			p{
+				text-align: justify;
+			}
+			img, p img{
+				.img-responsive;
+			}
+
+			strong{
+			font-size: 20px;
+			color: @negro;
+			}
+
+			em{
+			color: @naranja; 
+			}
+
+			form.search-form label {
+				font-family: @letra-especial;
+			}
+
+			header{
+				.margen-eje_y(5px, 25px);
+			}
+			div.wpcf7{
+				width: 40%;
+			}
+			ul{
+				list-style: dotted;
+				margin-left: 50px;
+			}
+			ol{
+				list-style: decimal;
+				margin-left: 50px;
+			}
+		}
+	}
+	#pager{
+
+		li{
+			.margen-eje_y(3px, 3px);
+
+			a{
+				color: @blanco;
+			}
+		}
+	}
+}
+
+/*
+ *
+ *Estilos del home.
+ *
+ */
+#comments{
+	min-width: 500px;
+	max-width: 800px;
+
+	h3{
+		font-family: @titulo-grueso;
+		font-size: 18px;
+	}
+	ol{
+
+		li{
+
+			article.comment-body{
+				.bordes-redondeados(solid, 3px, @grisoscuro, 40px, 40px, 40px, 40px);
+				.relleno-eje_x(20px, 20px);
+				background-color: @celesteclaro;
+
+				footer.comment-meta{
+					.margen(7px, 5px, 7px, 5px);
+					.relleno(3px, 2px, 3px, 2px);
+				}
+				div.comment-content{
+					.margen-eje_x(5px, 5px);
+					.relleno-eje_x(5px, 5px);
+				}
+				div.reply{
+					.margen-eje_x(5px, 5px);
+					.relleno-eje_x(5px, 5px);
+				}
+			}
+		}
+	}
+}	
+div#respond{
+
+	form#commentform{
+
+		p.comment-form-author{
+			width: 350px;
+
+			input#author{
+				.relleno(3px, 3px, 3px, 3px);
+				.bordes-redondeados(solid, 1px, @grisoscuro, 7px, 7px, 7px, 7px);
+				background-color: @gris;
+				color: @blanco;
+			}
+		}
+		p.comment-form-email{
+			width: 350px;
+
+			input#email{
+				.relleno(3px, 3px, 3px, 3px);
+				.bordes-redondeados(solid, 1px, @grisoscuro, 7px, 7px, 7px, 7px);
+				background-color: @gris;
+				color: @blanco;
+			}
+		}
+		p.comment-form-url{
+			width: 350px;
+
+			input#url{
+				.relleno(3px, 3px, 3px, 3px);
+				.bordes-redondeados(solid, 1px, @grisoscuro, 7px, 7px, 7px, 7px);
+				background-color: @gris;
+				color: @blanco;
+				width: 350px;
+			}
+		}
+		p.comment-form-comment{
+
+			textarea#comment{
+				.relleno(7px, 10px, 7px, 10px);
+				.bordes-redondeados(solid, 1px, @grisoscuro, 7px, 7px, 7px, 7px);
+				background-color: @gris;
+				color: @blanco;
+			}
+		}
+		p.form-allowed-tags{
+
+			code{
+				white-space: pre-line;
+			}
+		}
+	}
+}
+
+/*
+ *
+ * WP-CORE
+ *
+ */
+
+input#submit,
+form.search-form input.search-submit{
+	.btn;
+	.btn-primary;
+	font-family: @titulo-grueso;
+}
+form.search-form label span{
+	letter-spacing: 1px;
+	font-size: 20px;
+	font-family: @titulo-grueso;
+}
+/************ COMENTARIOS ************/
+#comments-list {
+padding-left: 0;
+list-style: none;
+}
+#comments-list .comment-body {
+background: #f2f2f2;
+padding: 15px;
+margin-bottom: 10px;
+}
+#comments-list .comment-author {
+margin-bottom: 15px;
+}
+#comments-list .comment-meta {
+font-size: 0.8em;
+margin-bottom: 10px;
+}
+#comments-list .children {
+list-style: none;
+}
+#comments-list .bypostauthor .comment-body {
+background: #E5F7FE;
+}
+#commentform {
+}
+#commentform input[type="text"],
+#commentform input[type="email"],
+#commentform textarea {
+width: 100%;
+}
+
+/*
+ *
+ * Corrección para el plugin syntaxhighlighter
+ *
+ */
+body{
+
+	#container-total{
+
+		.row{
+
+			#main-content{
+
+				section{
+
+					article.post{
+
+						div{
+
+							div.syntaxhighlighter{
+
+								table{
+
+									tbody{
+
+										tr{
+
+											td.code{
+												
+												div.container:before,
+												.container:before{
+													content: none !important;
+												}
+												div.container:after,
+												.container:after{
+													content: none !important;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/*
+ *
+ * Corrección para tabbet-loggin
+ *
+ */
+
+div.tab_container_login div#login form div.username,
+div.tab_container_login div#login form div.password,
+div.tab_container_login div#login form div.login_fields
+div.tab_container_login div#register form div.username,
+div.tab_container_login div#register form div.password,
+div.tab_container_login div#register form div.login_fields,
+div.tab_container_login div#forgot_password form div.username,
+div.tab_container_login div#forgot_password form div.login_fields {
+	.form-group
+}
+div.tab_container_login div#login form div.username > input,
+div.tab_container_login div#login form div.password > input,
+div.tab_container_login div#register form div.username > input,
+div.tab_container_login div#register form div.password > input,
+div.tab_container_login div#forgot_password form div.username > input {
+	.form-control;
+	background-color: @celesteclaro;
+	border-color: @grisoscuro;
+}
+div.tab_container_login div#login form div.login_fields > input.user-submit,
+div.tab_container_login div#register form div.login_fields > input.user-submit,
+div.tab_container_login div#forgot_password form div.login_fields > input.user-submit {
+	.btn;
+	.btn-primary;
+	font-weight: normal;
+	font-size: 18px;
+	font-family: @titulo-grueso;
+}
+div.tab_container_login div#login form div.username > label,
+div.tab_container_login div#login form div.password > label,
+div.tab_container_login div#login form div.login_fields > div.rememberme > label,
+div.tab_container_login div#register form div.username > label,
+div.tab_container_login div#register form div.password > label {
+	font-size: 20px;
+}
+div.tab_container_login div#register > p,
+div.tab_container_login div#forgot_password > p {
+	font-size: 18px;
+	font-weight: normal;
+}
+
+#login-register-password{
+	margin-top: 20px;
+
+	.tab_container_login{
+
+		#login,
+		#register,
+		#forgot_password{
+
+			h3{
+				font-family: @titulo-copado;
+			}
+			p{
+				font-family: @letra-general;
+			}
+			form.wp-user-form{
+
+				.username label,
+				.password label,
+				.login_fields .rememberme label,
+				.oneall_social_login .oneall_social_login_label label{
+					font-family: @titulo-grueso;
+				}
+			}
+		}
+	}
+}
+/*----- Retoques a Social Login -----*/
+
+div.oneall_social_login{
+	max-height: 9em;
+}
+
+/*----- Retoques a AddThis -----*/
+
+div.addthis-toolbox{
+	margin-top: 7px;
+}
+
+/*----- Retoques Suscripción de mail chimp -----*/
+
+#mc_embed_signup{
+	background-color: @grisclaro;
+	.bordes-redondeados(solid, 1px, @grisoscuro, 4px, 4px, 4px, 4px);
+	.relleno-eje_y(3px, 7px);
+
+	#mc-embedded-subscribe-form{
+
+		.indicates-required{
+			font-family: @titulo-fino;
+		}
+		.mc-field-group{
+			label{
+				font-family: @titulo-copado;
+				font-size: 22px;
+			}
+			input[type="email"]{
+				.form-control;
+				background-color: @celesteclaro;
+				border-color: @grisoscuro;
+			}
+		}
+		.input-group{
+
+			strong{
+				font-family: @titulo-copado;
+				font-size: 22px;
+			}
+			ul li label{
+				font-family: @letra-general;
+			}
+		}
+		.clear{
+			input#mc-embedded-subscribe{
+				.btn;
+				.btn-primary;
+				font-family: @titulo-grueso;
+			}
+		}
+	}
+}

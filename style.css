@@ -1,0 +1,18 @@
+/*
+Theme Name: El Galeón Argentino Theme
+Theme URI: http://elgaleonargentino.com.ar/
+Description: Template creado por y para El Galeón Argentino.
+Version: 1.0.0
+Author: Diego A. Zapata Häntsch
+Author URI: http://elgaleonargentino.com.ar/
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, gray, white, one-column, two-columns, right-sidebar, fluid-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain: ega
+
+El Galeón Argentino Theme WordPress Theme, Copyright 2014 El Galeón Argentino.
+El Galeón Argentino Theme is distributed under the terms of the GNU GPL.
+*/
+
+@import url('css/ega.css');
+@import url('css/responsive.css');

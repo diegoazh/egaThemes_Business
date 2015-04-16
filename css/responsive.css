@@ -1,0 +1,315 @@
+/*
+ *
+ *Estilos personalizados del sitio.
+ *
+ *
+ *
+ *
+ *Variables less.
+ *
+ */
+/* -----Imagenes----- */
+/* -----Colores----- */
+/* -----Tipografía----- */
+/*
+ *
+ *Clases less.
+ *
+ */
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+/* Empiezan las media queries */
+@media (min-width: 1441px) {
+  #menu-small-device {
+    display: none;
+    visibility: hidden;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  #container-total .row #main-content section article.post {
+    /*img.content-ega{
+							width:400px !important;
+							height:370px !important;
+						}*/
+  }
+  #menu-small-device {
+    display: none;
+    visibility: hidden;
+  }
+  #clientes {
+    height: 250px;
+    margin-bottom: 30px;
+  }
+  #clientes #container-clientes {
+    background-color: #fcfcfc;
+    text-align: center;
+  }
+  #clientes #container-clientes #images-clientes {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 50px;
+    text-align: center;
+  }
+  #clientes #container-clientes #images-clientes h2 {
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+  #clientes #container-clientes #images-clientes ul {
+    width: auto;
+    height: 200px;
+  }
+  #clientes #container-clientes #images-clientes ul li {
+    float: left;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  #clientes #container-clientes #images-clientes ul li a {
+    opacity: 0.5;
+    text-decoration: none;
+  }
+  #clientes #container-clientes #images-clientes ul li a img {
+    width: 150px;
+  }
+  #clientes #container-clientes #images-clientes ul li a p {
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
+  #clientes #container-clientes #images-clientes ul li a:hover {
+    opacity: 1;
+    transition: all 1s ease 0s;
+    text-decoration: none;
+  }
+  #clientes #container-clientes #images-clientes ul li a:hover img {
+    width: 200px;
+    transition: all 1s ease 0s;
+  }
+  #clientes #container-clientes #images-clientes ul li a:hover p {
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 480px) and (max-width: 1024px) {
+  #container-total .row #main-content section article.post {
+    /*img.content-ega{
+							width:350px !important;
+							height: 320px !important;
+						}*/
+  }
+  #nav-theme {
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-left: -15px;
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    z-index: 11;
+    background-color: #81d7fc;
+    background: #81d7fc;
+  }
+  #nav-theme div.row {
+    background-color: #81d7fc;
+    background: #81d7fc;
+    width: 100%;
+  }
+  #nav-theme div.row div#site-logo {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  #nav-theme div.row #menu-small-device {
+    padding-left: 40px;
+  }
+  #nav-theme div.row #menu-small-device #container-menu-small-device-id {
+    width: auto !important;
+  }
+  #site-menu,
+  #slider-header,
+  #clientes {
+    display: none;
+    visibility: hidden;
+  }
+  #contenedor-header #title-header #logo-title::before {
+    content: url("../images/ega-youtube-redondo-muychico.png");
+  }
+  footer {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  #accion div #accion-llamado p {
+    columns: 2 auto;
+    column-gap: 1em !important;
+    column-rule: 1px solid #F3F3F3;
+    -webkit-columns: 2 auto;
+    -webkit-column-gap: 1em !important;
+    -webkit-column-rule: 1px solid #F3F3F3;
+    -moz-columns: 2 auto;
+    -moz-column-gap: 1em !important;
+    -moz-column-rule: 1px solid #F3F3F3;
+    -o-columns: 2 auto;
+    -o-column-gap: 1em !important;
+    -o-column-rule: 1px solid #F3F3F3;
+  }
+  #accion div #accion-llamado {
+    padding: 0px 7px;
+  }
+  #comments,
+  #comments h3,
+  #comments #comments-list,
+  #comments #respond,
+  #comments #respond form p,
+  #comments #respond form p input#author,
+  #comments #respond form p input#email,
+  #comments #respond form p input#url {
+    min-width: 430px !important;
+    max-width: 1000px !important;
+  }
+  #mc_embed_signup {
+    width: 300px !important;
+  }
+}
+@media (min-width: 251px) and (max-width: 479px) {
+  #container-total .row #main-content section article.post {
+    /*img.content-ega{
+							width:220px !important;
+							height: 190px !important;
+						}*/
+  }
+  #nav-theme {
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-left: -15px;
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    z-index: 11;
+    background-color: #81d7fc;
+    background: #81d7fc;
+  }
+  #nav-theme div.row {
+    background-color: #81d7fc;
+    background: #81d7fc;
+    width: 100%;
+  }
+  #nav-theme div.row div#site-logo {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  #nav-theme div.row #menu-small-device {
+    padding-left: 40px;
+  }
+  #nav-theme div.row #menu-small-device #container-menu-small-device-id {
+    width: auto !important;
+  }
+  #site-menu,
+  #slider-header,
+  #clientes {
+    display: none;
+    visibility: hidden;
+  }
+  #contenedor-header #title-header #logo-title::before {
+    content: url("../images/ega-youtube-redondo-muychico.png");
+  }
+  footer {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  #accion div #accion-llamado p {
+    columns: 1 auto !important;
+    -webkit-columns: 1 auto !important;
+    -moz-columns: 1 auto !important;
+    -o-columns: 1 auto !important;
+  }
+  #accion div #accion-llamado {
+    padding: 0px 7px;
+  }
+  #comments,
+  #comments h3,
+  #comments #comments-list,
+  #comments #respond,
+  #comments #respond form p,
+  #comments #respond form p input#author,
+  #comments #respond form p input#email,
+  #comments #respond form p input#url {
+    min-width: 250px !important;
+    max-width: 280px !important;
+  }
+  #mc_embed_signup {
+    width: 250px !important;
+  }
+}
+@media (max-width: 250px) {
+  #container-total .row #main-content section article.post {
+    /*img.content-ega{
+							width:150px !important;
+							height: 120px !important;
+						}*/
+  }
+  #nav-theme {
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-left: -15px;
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    z-index: 11;
+    background-color: #81d7fc;
+    background: #81d7fc;
+  }
+  #nav-theme div.row {
+    background-color: #81d7fc;
+    background: #81d7fc;
+    width: 100%;
+  }
+  #nav-theme div.row div#site-logo {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  #nav-theme div.row #menu-small-device {
+    padding-left: 40px;
+  }
+  #nav-theme div.row #menu-small-device #container-menu-small-device-id {
+    width: auto !important;
+  }
+  #site-menu,
+  #slider-header,
+  #clientes {
+    display: none;
+    visibility: hidden;
+  }
+  #contenedor-header #title-header #logo-title::before {
+    content: url("../images/ega-youtube-redondo-muychico.png");
+  }
+  footer {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  #accion div #accion-llamado p {
+    columns: 1 auto !important;
+    -webkit-columns: 1 auto !important;
+    -moz-columns: 1 auto !important;
+    -o-columns: 1 auto !important;
+  }
+  #accion div #accion-llamado {
+    padding: 0px 7px;
+  }
+  #contenedor-header #title-header #container-main-title #main-title {
+    font-size: 30px !important;
+  }
+  #comments,
+  #comments h3,
+  #comments #comments-list,
+  #comments #respond,
+  #comments #respond form p,
+  #comments #respond form p input#author,
+  #comments #respond form p input#email,
+  #comments #respond form p input#url {
+    min-width: 150px !important;
+    max-width: 200px !important;
+  }
+  #mc_embed_signup {
+    width: 210px !important;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

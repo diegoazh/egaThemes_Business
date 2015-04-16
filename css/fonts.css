@@ -1,0 +1,55 @@
+/*
+ *
+ * Fuentes en uso en la pagina.
+ *
+ */
+
+@font-face {
+    font-family: 'Aclonica';
+    src: url(../fonts/Aclonica/Aclonica.ttf);
+}
+@font-face {
+	font-family: 'Bangers';
+	src: url(../fonts/Bangers/Bangers.ttf);
+}
+@font-face {
+	font-family: 'Fontdiner Swanky';
+	src: url(../fonts/Fontdiner_Swanky/FontdinerSwanky.ttf);
+}
+@font-face {
+	font-family: 'Fredericka the Great';
+	src: url(../fonts/Fredericka_the_Great/FrederickatheGreat-Regular.ttf);
+}
+@font-face {
+	font-family: 'Josefin Slab Normal';
+	src: url(../fonts/Josefin_Slab/JosefinSlab-Regular.ttf);
+}
+@font-face {
+	font-family: 'Josefin Slab Italic';
+	src: url(../fonts/Josefin_Slab/JosefinSlab-Italic.ttf);
+}
+@font-face {
+	font-family: 'Josefin Slab Bold';
+	src: url(../fonts/Josefin_Slab/JosefinSlab-Bold.ttf);
+}
+@font-face {
+	font-family: 'Josefin Slab Bold Italic';
+	src: url(../fonts/Josefin_Slab/JosefinSlab-BoldItalic.ttf);
+}
+@font-face {
+	font-family: 'Rock Salt';
+	src: url(../fonts/Rock_Salt/RockSalt.ttf);
+}
+@font-face {
+	font-family: 'Slackey';
+	src: url(../fonts/Slackey/Slackey.ttf);
+}
+@font-face {
+	font-family: 'IM Fell Double Pica Normal';
+	src: url(../fonts/IM_Fell_Double_Pica/IMFeDPrm28P.ttf);
+}
+@font-face {
+	font-family: 'IM Fell Double Pica Italic';
+	src: url(../fonts/IM_Fell_Double_Pica/IMFeDPit28P.ttf);
+}
+
