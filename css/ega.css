@@ -7031,7 +7031,10 @@ footer #widgets-dinamicos #ter div div a:hover,
 footer #widgets-dinamicos #cua div div a:hover {
   color: #ffffff;
 }
-footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar {
+footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar,
+footer #widgets-dinamicos #seg .widget #calendar_wrap #wp-calendar,
+footer #widgets-dinamicos #ter .widget #calendar_wrap #wp-calendar,
+footer #widgets-dinamicos #cua .widget #calendar_wrap #wp-calendar {
   width: 100%;
   max-width: 100%;
   margin-bottom: 20px;
@@ -7039,60 +7042,141 @@ footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar {
   border: 1px solid #636363;
 }
 footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar > thead > tr > th,
+footer #widgets-dinamicos #seg .widget #calendar_wrap #wp-calendar > thead > tr > th,
+footer #widgets-dinamicos #ter .widget #calendar_wrap #wp-calendar > thead > tr > th,
+footer #widgets-dinamicos #cua .widget #calendar_wrap #wp-calendar > thead > tr > th,
 footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar > tbody > tr > th,
+footer #widgets-dinamicos #seg .widget #calendar_wrap #wp-calendar > tbody > tr > th,
+footer #widgets-dinamicos #ter .widget #calendar_wrap #wp-calendar > tbody > tr > th,
+footer #widgets-dinamicos #cua .widget #calendar_wrap #wp-calendar > tbody > tr > th,
 footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar > tfoot > tr > th,
+footer #widgets-dinamicos #seg .widget #calendar_wrap #wp-calendar > tfoot > tr > th,
+footer #widgets-dinamicos #ter .widget #calendar_wrap #wp-calendar > tfoot > tr > th,
+footer #widgets-dinamicos #cua .widget #calendar_wrap #wp-calendar > tfoot > tr > th,
 footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar > thead > tr > td,
+footer #widgets-dinamicos #seg .widget #calendar_wrap #wp-calendar > thead > tr > td,
+footer #widgets-dinamicos #ter .widget #calendar_wrap #wp-calendar > thead > tr > td,
+footer #widgets-dinamicos #cua .widget #calendar_wrap #wp-calendar > thead > tr > td,
 footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar > tbody > tr > td,
-footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar > tfoot > tr > td {
+footer #widgets-dinamicos #seg .widget #calendar_wrap #wp-calendar > tbody > tr > td,
+footer #widgets-dinamicos #ter .widget #calendar_wrap #wp-calendar > tbody > tr > td,
+footer #widgets-dinamicos #cua .widget #calendar_wrap #wp-calendar > tbody > tr > td,
+footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar > tfoot > tr > td,
+footer #widgets-dinamicos #seg .widget #calendar_wrap #wp-calendar > tfoot > tr > td,
+footer #widgets-dinamicos #ter .widget #calendar_wrap #wp-calendar > tfoot > tr > td,
+footer #widgets-dinamicos #cua .widget #calendar_wrap #wp-calendar > tfoot > tr > td {
   padding: 8px;
   line-height: 1.42857143;
   vertical-align: top;
   border-top: 1px solid #dddddd;
 }
-footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar > thead > tr > th {
+footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar > thead > tr > th,
+footer #widgets-dinamicos #seg .widget #calendar_wrap #wp-calendar > thead > tr > th,
+footer #widgets-dinamicos #ter .widget #calendar_wrap #wp-calendar > thead > tr > th,
+footer #widgets-dinamicos #cua .widget #calendar_wrap #wp-calendar > thead > tr > th {
   vertical-align: bottom;
   border-bottom: 2px solid #dddddd;
 }
 footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar > caption + thead > tr:first-child > th,
+footer #widgets-dinamicos #seg .widget #calendar_wrap #wp-calendar > caption + thead > tr:first-child > th,
+footer #widgets-dinamicos #ter .widget #calendar_wrap #wp-calendar > caption + thead > tr:first-child > th,
+footer #widgets-dinamicos #cua .widget #calendar_wrap #wp-calendar > caption + thead > tr:first-child > th,
 footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar > colgroup + thead > tr:first-child > th,
+footer #widgets-dinamicos #seg .widget #calendar_wrap #wp-calendar > colgroup + thead > tr:first-child > th,
+footer #widgets-dinamicos #ter .widget #calendar_wrap #wp-calendar > colgroup + thead > tr:first-child > th,
+footer #widgets-dinamicos #cua .widget #calendar_wrap #wp-calendar > colgroup + thead > tr:first-child > th,
 footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar > thead:first-child > tr:first-child > th,
+footer #widgets-dinamicos #seg .widget #calendar_wrap #wp-calendar > thead:first-child > tr:first-child > th,
+footer #widgets-dinamicos #ter .widget #calendar_wrap #wp-calendar > thead:first-child > tr:first-child > th,
+footer #widgets-dinamicos #cua .widget #calendar_wrap #wp-calendar > thead:first-child > tr:first-child > th,
 footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar > caption + thead > tr:first-child > td,
+footer #widgets-dinamicos #seg .widget #calendar_wrap #wp-calendar > caption + thead > tr:first-child > td,
+footer #widgets-dinamicos #ter .widget #calendar_wrap #wp-calendar > caption + thead > tr:first-child > td,
+footer #widgets-dinamicos #cua .widget #calendar_wrap #wp-calendar > caption + thead > tr:first-child > td,
 footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar > colgroup + thead > tr:first-child > td,
-footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar > thead:first-child > tr:first-child > td {
+footer #widgets-dinamicos #seg .widget #calendar_wrap #wp-calendar > colgroup + thead > tr:first-child > td,
+footer #widgets-dinamicos #ter .widget #calendar_wrap #wp-calendar > colgroup + thead > tr:first-child > td,
+footer #widgets-dinamicos #cua .widget #calendar_wrap #wp-calendar > colgroup + thead > tr:first-child > td,
+footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar > thead:first-child > tr:first-child > td,
+footer #widgets-dinamicos #seg .widget #calendar_wrap #wp-calendar > thead:first-child > tr:first-child > td,
+footer #widgets-dinamicos #ter .widget #calendar_wrap #wp-calendar > thead:first-child > tr:first-child > td,
+footer #widgets-dinamicos #cua .widget #calendar_wrap #wp-calendar > thead:first-child > tr:first-child > td {
   border-top: 0;
 }
-footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar > tbody + tbody {
+footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar > tbody + tbody,
+footer #widgets-dinamicos #seg .widget #calendar_wrap #wp-calendar > tbody + tbody,
+footer #widgets-dinamicos #ter .widget #calendar_wrap #wp-calendar > tbody + tbody,
+footer #widgets-dinamicos #cua .widget #calendar_wrap #wp-calendar > tbody + tbody {
   border-top: 2px solid #dddddd;
 }
-footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar .table {
+footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar .table,
+footer #widgets-dinamicos #seg .widget #calendar_wrap #wp-calendar .table,
+footer #widgets-dinamicos #ter .widget #calendar_wrap #wp-calendar .table,
+footer #widgets-dinamicos #cua .widget #calendar_wrap #wp-calendar .table {
   background-color: #ffffff;
 }
-footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar > tbody > tr:nth-of-type(odd) {
+footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar > tbody > tr:nth-of-type(odd),
+footer #widgets-dinamicos #seg .widget #calendar_wrap #wp-calendar > tbody > tr:nth-of-type(odd),
+footer #widgets-dinamicos #ter .widget #calendar_wrap #wp-calendar > tbody > tr:nth-of-type(odd),
+footer #widgets-dinamicos #cua .widget #calendar_wrap #wp-calendar > tbody > tr:nth-of-type(odd) {
   background-color: #f9f9f9;
 }
 footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar > thead > tr > th,
+footer #widgets-dinamicos #seg .widget #calendar_wrap #wp-calendar > thead > tr > th,
+footer #widgets-dinamicos #ter .widget #calendar_wrap #wp-calendar > thead > tr > th,
+footer #widgets-dinamicos #cua .widget #calendar_wrap #wp-calendar > thead > tr > th,
 footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar > tbody > tr > th,
+footer #widgets-dinamicos #seg .widget #calendar_wrap #wp-calendar > tbody > tr > th,
+footer #widgets-dinamicos #ter .widget #calendar_wrap #wp-calendar > tbody > tr > th,
+footer #widgets-dinamicos #cua .widget #calendar_wrap #wp-calendar > tbody > tr > th,
 footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar > tfoot > tr > th,
+footer #widgets-dinamicos #seg .widget #calendar_wrap #wp-calendar > tfoot > tr > th,
+footer #widgets-dinamicos #ter .widget #calendar_wrap #wp-calendar > tfoot > tr > th,
+footer #widgets-dinamicos #cua .widget #calendar_wrap #wp-calendar > tfoot > tr > th,
 footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar > thead > tr > td,
+footer #widgets-dinamicos #seg .widget #calendar_wrap #wp-calendar > thead > tr > td,
+footer #widgets-dinamicos #ter .widget #calendar_wrap #wp-calendar > thead > tr > td,
+footer #widgets-dinamicos #cua .widget #calendar_wrap #wp-calendar > thead > tr > td,
 footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar > tbody > tr > td,
-footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar > tfoot > tr > td {
+footer #widgets-dinamicos #seg .widget #calendar_wrap #wp-calendar > tbody > tr > td,
+footer #widgets-dinamicos #ter .widget #calendar_wrap #wp-calendar > tbody > tr > td,
+footer #widgets-dinamicos #cua .widget #calendar_wrap #wp-calendar > tbody > tr > td,
+footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar > tfoot > tr > td,
+footer #widgets-dinamicos #seg .widget #calendar_wrap #wp-calendar > tfoot > tr > td,
+footer #widgets-dinamicos #ter .widget #calendar_wrap #wp-calendar > tfoot > tr > td,
+footer #widgets-dinamicos #cua .widget #calendar_wrap #wp-calendar > tfoot > tr > td {
   border: 1px solid #dddddd;
 }
 footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar > thead > tr > th,
-footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar > thead > tr > td {
+footer #widgets-dinamicos #seg .widget #calendar_wrap #wp-calendar > thead > tr > th,
+footer #widgets-dinamicos #ter .widget #calendar_wrap #wp-calendar > thead > tr > th,
+footer #widgets-dinamicos #cua .widget #calendar_wrap #wp-calendar > thead > tr > th,
+footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar > thead > tr > td,
+footer #widgets-dinamicos #seg .widget #calendar_wrap #wp-calendar > thead > tr > td,
+footer #widgets-dinamicos #ter .widget #calendar_wrap #wp-calendar > thead > tr > td,
+footer #widgets-dinamicos #cua .widget #calendar_wrap #wp-calendar > thead > tr > td {
   border-bottom-width: 2px;
 }
-footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar caption {
+footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar caption,
+footer #widgets-dinamicos #seg .widget #calendar_wrap #wp-calendar caption,
+footer #widgets-dinamicos #ter .widget #calendar_wrap #wp-calendar caption,
+footer #widgets-dinamicos #cua .widget #calendar_wrap #wp-calendar caption {
   font-family: 'Fontdiner Swanky', cursive;
   text-transform: uppercase;
   font-size: 26px;
   color: #ff6000;
 }
-footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar thead tr th {
+footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar thead tr th,
+footer #widgets-dinamicos #seg .widget #calendar_wrap #wp-calendar thead tr th,
+footer #widgets-dinamicos #ter .widget #calendar_wrap #wp-calendar thead tr th,
+footer #widgets-dinamicos #cua .widget #calendar_wrap #wp-calendar thead tr th {
   background-color: #636363;
   color: #ffffff;
 }
-footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar tbody tr td#today {
+footer #widgets-dinamicos #pri .widget #calendar_wrap #wp-calendar tbody tr td#today,
+footer #widgets-dinamicos #seg .widget #calendar_wrap #wp-calendar tbody tr td#today,
+footer #widgets-dinamicos #ter .widget #calendar_wrap #wp-calendar tbody tr td#today,
+footer #widgets-dinamicos #cua .widget #calendar_wrap #wp-calendar tbody tr td#today {
   background-color: #ffa066;
 }
 footer #widgets-dinamicos #copyright {
