@@ -229,7 +229,7 @@ a{
 	width: 100%;
 	position: fixed;
 	z-index: 11;
-    .color-fondo(@celeste);
+    .color-fondo(rgb(140,200,203));
 
 	div.row{
 
@@ -241,7 +241,7 @@ a{
 
 #contenedor-header{
 	.relleno-eje_y(20px, 20px);
-	background-image: url('@{images}/fondo_web.png');
+	background-image: url('@{images}/fondo_web.jpg');
 	background-size: cover;
 
 	#title-header{
@@ -328,7 +328,7 @@ a{
 #accion{
 
 	div{
-		background-image: url('@{images}/galeon-home.png');
+		background-image: url('@{images}/galeon-home.jpg');
 		background-size: cover;
 		background-position: center;
 		background-attachment: fixed;
@@ -350,6 +350,7 @@ a{
 				vertical-align: middle;
 				text-align: justify;
 				.texto-columnas(auto, 2, balance, 3em, 1px, solid, #F3F3F3, all);
+				color: rgb(0,0,0);
 			}
 		}
 	}
@@ -416,8 +417,9 @@ footer{
 	.relleno-eje_y(30px, 0px);
 
 	#widgets-dinamicos{
-		background-color: @celeste;
+		background-color: rgb(140,200,203);
 		min-height: 300px;
+		padding-top: 20px;
 
 		#pri, #seg, #ter, #cua{
 			min-height: 250px;
@@ -436,7 +438,7 @@ footer{
 						a{
 							font-family: @letra-llamativa;
 							font-size: 16px;
-							color: @naranja;
+							color: rgb(87,105,113);
 						}
 						a:hover{
 							color: @blanco;
@@ -448,7 +450,7 @@ footer{
 					a{
 						font-family: @letra-llamativa;
 						font-size: 16px;
-						color: @naranja;
+						color: rgb(87,105,113);
 					}
 					a:hover{
 						color: @blanco;
@@ -456,6 +458,40 @@ footer{
 				}
 			}
 
+		}
+		#pri{
+			.widget{
+				#calendar_wrap{
+					#wp-calendar{
+						.table;
+						.table-striped;
+						.table-bordered;
+						border: 1px solid @grisoscuro;
+
+						caption{
+							font-family: @titulo-copado;
+							text-transform: uppercase;
+							font-size: 26px;
+							color: @naranja;
+						}
+						thead{
+							tr{
+								th{
+									background-color: @grisoscuro;
+									color: rgb(255, 255, 255);
+								}
+							}
+						}
+						tbody{
+							tr{
+								td#today{
+									background-color: @naranjaclaro;
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 		#copyright{
 			background-color: @grisoscuro;

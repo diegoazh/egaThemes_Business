@@ -27,7 +27,7 @@
 				<?php if( $tt_service1 && !empty( $tt_service1 ) ) { ?>
 				<h3><?php echo $tt_service1 ?></h3>
 				<?php } else { ?>
-				<h3>Diseño</h3>
+				<h3>Sección A</h3>
 				<?php } if( $desc_service1 && !empty( $desc_service1 ) ) { ?>
 				<p><?php echo $desc_service1 ?></p>
 				<?php } else { ?>
@@ -45,7 +45,7 @@
 				<?php if( $tt_service2 && !empty( $tt_service2 ) ) { ?>
 				<h3><?php echo $tt_service2 ?></h3>
 				<?php } else { ?>
-				<h3>Cursos</h3>
+				<h3>Sección B</h3>
 				<?php } if( $desc_service2 && !empty( $desc_service2 ) ) { ?>
 				<p><?php echo $desc_service2 ?></p>
 				<?php } else { ?>
@@ -63,7 +63,7 @@
 				<?php if( $tt_service3 && !empty( $tt_service3 ) ) { ?>
 				<h3><?php echo $tt_service3 ?></h3>
 				<?php } else { ?>
-				<h3>Soporte</h3>
+				<h3>Sección C</h3>
 				<?php } if( $desc_service3 && !empty( $desc_service3 ) ) { ?>
 				<p><?php echo $desc_service3 ?></p>
 				<?php } else { ?>
@@ -126,7 +126,7 @@
 				if( $tt_clientes && !empty( $tt_clientes ) ) { ?>
 				<h2><?php echo $tt_clientes ?></h2>
 				<?php } else { ?>
-				<h2>Algunos de nuestros clientes</h2>
+				<h2>T&iacute;tulo Secci&oacute;n 2</h2>
 				<?php } ?>
 					<ul>
 						<li>
@@ -138,7 +138,7 @@
 							<?php } if( $subtt_cliente1 && !empty( $subtt_cliente1 ) ) { ?>
 								<p><?php echo $subtt_cliente1 ?></p>
 							<?php } else { ?>
-								<p>Adaptación de un tema free.</p>
+								<p>Subtítulo cliente 1.</p>
 							<?php } ?>
 							</a>
 						</li>
@@ -151,7 +151,7 @@
 							<?php } if( $subtt_cliente2 && !empty( $subtt_cliente2 ) ) { ?>
 								<p><?php echo $subtt_cliente2 ?></p>
 							<?php } else { ?>
-								<P>Tema creado especialmente para este cliente.</P>
+								<P>Subtítulo cliente 2.</P>
 							<?php } ?>
 							</a>
 						</li>
@@ -164,7 +164,7 @@
 							<?php } if( $subtt_cliente3 && !empty( $subtt_cliente3 ) ) { ?>
 								<p><?php echo $subtt_cliente3 ?></p>
 							<?php } else { ?>
-								<p>Adaptación de un tema free.</p>
+								<p>Subtítulo cliente 3.</p>
 							<?php } ?>
 							</a>
 						</li>
@@ -177,7 +177,7 @@
 							<?php } if( $subtt_cliente4 && !empty( $subtt_cliente4 ) ) { ?>
 								<p><?php echo $subtt_cliente4 ?></p>
 							<?php } else { ?>
-								<p>Tema creado especialmente para este cliente.</p>
+								<p>Subtítulo cliente 4.</p>
 							<?php } ?>
 							</a>
 						</li>
@@ -199,7 +199,7 @@
 			<?php if( $subtt_clientes && !empty( $subtt_clientes ) ) { ?>
 			<h4><?php echo $subtt_clientes ?></h4>
 			<?php } else { ?>
-			<h4>Nuestras referencias siempre a su alcance.</h4>
+			<h4>Subt&iacute;tulo de la secci&oacute;n</h4>
 			<?php } ?>
 		</div>
 	</section>

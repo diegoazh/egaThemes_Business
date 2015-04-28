@@ -21,12 +21,14 @@
 				<p>
 					<strong>
 						Copyright &#169; <?php echo $copyright_footer ?>
+						<br><small><?php echo txt_prom(); ?></small>
 					</strong>
 				</p>
 			<?php } else { ?>
 				<p>
 					<strong>
 						Copyright &#169; Tu texto iría aquí.
+						<br><small><?php echo text_prom() ?></small>
 					</strong>
 				</p>
 			<?php } ?>

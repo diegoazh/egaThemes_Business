@@ -21,9 +21,9 @@ if (! function_exists('elgaleonargentino_scripts')) {
 	
 	function elgaleonargentino_scripts(){
 
-		wp_register_script( 'bootstrap', get_stylesheet_directory_uri().'/js/bootstrap.js', '', '3.1.1', '' );
+		wp_register_script( 'jQuery', 'http://code.jquery.com/jquery-1.11.2.min.js', '', '1.11.2', false );
 
-		/*wp_register_script( 'less-1.7.0.min', get_stylesheet_directory_uri().'/js/less-1.7.0.min.js', 'bootstrap', '1.7.0', '' );*/
+		wp_register_script( 'bootstrap', get_stylesheet_directory_uri().'/js/bootstrap.js', array('jQuery'), '3.1.1', '' );
 
 		wp_enqueue_script( 'bootstrap' );
 	}
@@ -284,3 +284,10 @@ function ega_change_footer_admin() {
 	}
 }  
 add_filter('admin_footer_text', 'ega_change_footer_admin');
+
+if(!function_exists('text_prom')){
+	function text_prom(){
+		$prom = "Powered by <a href=\"http://egalabs.com\" target=\"_new\">EGALABS.COM</a>";
+		return $prom;
+	}
+}
