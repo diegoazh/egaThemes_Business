@@ -5,27 +5,6 @@
 	<!-- etiquetas de meta informacion -->
 	<meta charset="<?php bloginfo('charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximumscale=2.0, user-scalable=0">
-	<meta name="google-site-verification" content="kXwSTB6bTlHguPR7V-orI4lUEhgq-h_V_tVbPai7jOc" />
-	<meta name="bitly-verification" content="282b338798bd"/>
-	<meta name="alexaVerifyID" content="Zd3Ftl5YHFSjCD5XkPt0tQ0SmW0"/>
-	<meta name="msvalidate.01" content="120D58D468D7AB8DC2180E647D25CAD3" />
-	<meta name="p:domain_verify" content="d7ee96837b926aa5222c8c03775ec79e"/>
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:site" content="@GaleonArgentino">
-	<meta name="twitter:title" content="El Galeon Argentino">
-	<meta name="twitter:description" content="Un sitio dedicado al diseño web">
-	<meta name="twitter:creator" content="@diegoazh2003">
-	<meta name="twitter:image:src" content="http://elgaleonargentino.com.ar/wp-content/uploads/2014/08/ega-youtube-redondo-chico.png">
-	<meta name="twitter:domain" content="elgaleonargentino.com.ar">
-	<meta name="twitter:app:name:iphone" content="">
-	<meta name="twitter:app:name:ipad" content="">
-	<meta name="twitter:app:name:googleplay" content="">
-	<meta name="twitter:app:url:iphone" content="">
-	<meta name="twitter:app:url:ipad" content="">
-	<meta name="twitter:app:url:googleplay" content="">
-	<meta name="twitter:app:id:iphone" content="">
-	<meta name="twitter:app:id:ipad" content="">
-	<meta name="twitter:app:id:googleplay" content="">
 	<!-- Título del sitio -->
 	<title><?php wp_title( '|', true, 'right' ); bloginfo('name' ); ?></title>
 	<!-- Cargando favicon -->
